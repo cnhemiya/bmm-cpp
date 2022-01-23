@@ -1,4 +1,6 @@
 # myself
+build/
+
 CMakeLists.txt
 main.cpp
 main.c
