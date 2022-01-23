@@ -36,7 +36,7 @@ public:
         _m_datas.push_front(__x);
     }
 
-    reference top() noexcept
+    reference front() noexcept
     {
         return *_m_datas.begin();
     }
