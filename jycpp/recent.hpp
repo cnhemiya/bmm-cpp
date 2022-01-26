@@ -2,11 +2,11 @@
 #define RECENT_HPP
 #include <list>
 
-template <typename _Tp>
+template <typename _T>
 class recent
 {
 public:
-    typedef _Tp value_type;
+    typedef _T value_type;
     typedef typename std::list<value_type> datas_type;
     typedef typename datas_type::size_type size_type;
     typedef typename datas_type::reference reference;
@@ -36,14 +36,33 @@ public:
         _m_datas.push_front(__x);
     }
 
+    void pop()
+    {
+        _m_datas.pop_back();
+    }
+
     reference front() noexcept
     {
         return *_m_datas.begin();
     }
 
-    const_reference top() const noexcept
+    const_reference front() const noexcept
     {
         return *_m_datas.begin();
+    }
+
+    reference back() noexcept
+    {
+        iterator __t = _m_datas.end();
+        --__t;
+        return *__t;
+    }
+
+    const_reference back() const noexcept
+    {
+        const_iterator __t = _m_datas.end();
+        --__t;
+        return *__t;
     }
 
     iterator begin() noexcept
@@ -68,7 +87,7 @@ public:
 
     size_type size() const noexcept
     {
-        return _m_max_size;
+        return _m_datas.size();
     }
 
     void clear() noexcept
