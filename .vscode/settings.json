@@ -29,6 +29,22 @@
         "new": "cpp",
         "ostream": "cpp",
         "string": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "cstdint": "cpp",
+        "exception": "cpp",
+        "random": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "cinttypes": "cpp",
+        "typeinfo": "cpp"
     }
 }
