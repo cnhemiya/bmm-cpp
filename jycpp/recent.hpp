@@ -90,6 +90,11 @@ public:
         return _m_datas.size();
     }
 
+    size_type max_size() const noexcept
+    {
+        return _m_max_size;
+    }
+
     void clear() noexcept
     {
         _m_datas.clear();
