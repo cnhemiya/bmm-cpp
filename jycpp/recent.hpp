@@ -20,7 +20,7 @@ public:
         : _m_max_size(__n)
     {
     }
-    
+
     recent(const std::initializer_list<value_type> &__il)
         : _m_max_size(10)
     {
@@ -83,6 +83,26 @@ public:
     const_iterator end() const noexcept
     {
         return _m_datas.end();
+    }
+
+    iterator rbegin() noexcept
+    {
+        return _m_datas.rbegin();
+    }
+
+    const_iterator rbegin() const noexcept
+    {
+        return _m_datas.rbegin();
+    }
+
+    iterator rend() noexcept
+    {
+        return _m_datas.rend();
+    }
+
+    const_iterator rend() const noexcept
+    {
+        return _m_datas.rend();
     }
 
     size_type size() const noexcept
