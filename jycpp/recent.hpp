@@ -158,7 +158,7 @@ public:
             _M_datas.pop_back();
     }
 
-    /// @brief 返回容器的最大元素数量
+    /// @brief 判断容器是否为空
     bool empty() const noexcept
     {
         return _M_datas.empty();
