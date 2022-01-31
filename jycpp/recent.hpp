@@ -1,6 +1,10 @@
-#ifndef RECENT_HPP
-#define RECENT_HPP
+#ifndef _JYCPP_RECENT_HPP_
+#define _JYCPP_RECENT_HPP_
+
 #include <list>
+#include "global.hpp"
+
+_JYCPP_NAMESPACE_BEGIN_
 
 /// @brief 最近使用的类
 /// 
@@ -46,6 +50,14 @@ public:
         while (_M_datas.size() >= _M_max_size)
             _M_datas.pop_back();
         _M_datas.push_front(__x);
+    }
+
+    /// @brief 向前压入元素
+    void push(value_type &&__x)
+    {
+        while (_M_datas.size() >= _M_max_size)
+            _M_datas.pop_back();
+        _M_datas.push_front(std::move(__x));
     }
 
     /// @brief 弹出最后一个元素
@@ -172,4 +184,6 @@ private:
     size_type _M_max_size;
 };
 
-#endif // RECENT_HPP
+_JYCPP_NAMESPACE_END_
+
+#endif // _JYCPP_RECENT_HPP_
