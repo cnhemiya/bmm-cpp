@@ -1,10 +1,18 @@
-#ifndef _JYCPP_RECENT_HPP_
-#define _JYCPP_RECENT_HPP_
+/*
+ * LICENSE: MulanPSL2
+ * AUTHOR:  cnhemiya@qq.com
+ * DATE:    2022-02-06 15:59
+ */
+/// @file recent.hpp
+/// @brief 最近使用的类
+
+#ifndef _BMM_RECENT_HPP_
+#define _BMM_RECENT_HPP_
 
 #include <list>
 #include "global.hpp"
 
-_JYCPP_NAMESPACE_BEGIN_
+_BMM_NAMESPACE_BEGIN_
 
 /// @brief 最近使用的类
 /// 
@@ -184,6 +192,6 @@ private:
     size_type _M_max_size;
 };
 
-_JYCPP_NAMESPACE_END_
+_BMM_NAMESPACE_END_
 
-#endif // _JYCPP_RECENT_HPP_
+#endif // _BMM_RECENT_HPP_

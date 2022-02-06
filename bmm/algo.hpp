@@ -1,11 +1,19 @@
-#ifndef _JYCPP_ALGO_HPP_
-#define _JYCPP_ALGO_HPP_
+/*
+ * LICENSE: MulanPSL2
+ * AUTHOR:  cnhemiya@qq.com
+ * DATE:    2022-02-06 15:58
+ */
+/// @file algo.hpp
+/// @brief 实现一些算法
+
+#ifndef _BMM_ALGO_HPP_
+#define _BMM_ALGO_HPP_
 
 #include "global.hpp"
 
-_JYCPP_NAMESPACE_BEGIN_
+_BMM_NAMESPACE_BEGIN_
 
-/// @brief 判断 value 是否在容器中中
+/// @brief 判断 value 是否在容器中
 ///
 /// @param __arr 容器
 /// @param __val 值
@@ -51,6 +59,6 @@ bool if_in(_ArrayT &__arr, const _T &__val, _Func __func)
     return false;
 }
 
-_JYCPP_NAMESPACE_END_
+_BMM_NAMESPACE_END_
 
-#endif // _JYCPP_ALGO_HPP_
+#endif // _BMM_ALGO_HPP_

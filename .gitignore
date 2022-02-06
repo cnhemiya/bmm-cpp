@@ -4,6 +4,8 @@ build/
 CMakeLists.txt
 main.cpp
 main.c
+test.cpp
+test.c
 
 # Prerequisites
 *.d
