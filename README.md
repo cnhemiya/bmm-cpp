@@ -1,8 +1,11 @@
 # 苞米面 C++ 模板库
 
 ## 简介
-苞米面 C++ 模板库，没啥介绍的。  
+苞米面 C++ 模板库，无需编译，直接包含头文件就可以。  
 需要 C++ 编译器，支持 C++17 标准。
+
+## 依赖
+C++ STL 标准模板库
 
 ## 库功能说明
 ### 模板类
@@ -20,4 +23,4 @@ if_in|如果 value 在容器中则，调用函数 __func 并返回 true，否则
 [MulanPSL-2.0](http://license.coscl.org.cn/MulanPSL2)
 
 ## 项目地址
-**gitee**&nbsp;&nbsp;&nbsp;&nbsp;**https://gitee.com/cnhemiya/bmm-cpp**
+**GITEE**&nbsp;&nbsp;&nbsp;&nbsp;**https://gitee.com/cnhemiya/bmm-cpp**
