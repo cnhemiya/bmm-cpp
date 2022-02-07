@@ -9,6 +9,7 @@
 #ifndef _BMM_ALGO_HPP_
 #define _BMM_ALGO_HPP_
 
+#include <algorithm>
 #include "global.hpp"
 
 _BMM_NAMESPACE_BEGIN_
