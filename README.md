@@ -9,15 +9,15 @@ C++ STL 标准模板库
 
 ## 库功能说明
 ### 模板类
-名称|说明
---|--
-recent|最近使用的类，类似于 最近使用的文件
+名称|文件|说明
+--|--|--
+recent|<bmm/recent.hpp>|最近使用的类，类似于 最近使用的文件
 
 ### 算法
-名称|说明
---|--
-is_in|判断 value 是否在容器中  
-if_in|如果 value 在容器中则，调用函数 __func 并返回 true，否则返回 false
+名称|文件|说明
+--|--|--
+is_in|<bmm/algo.hpp>|判断 value 是否在容器中  
+if_in|<bmm/algo.hpp>|如果 value 在容器中则，调用函数 __func 并返回 true，否则返回 false
 
 ## 开源协议
 [MulanPSL-2.0](http://license.coscl.org.cn/MulanPSL2)
