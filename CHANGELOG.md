@@ -12,5 +12,5 @@
 需要 C++ 编译器，支持 **C++17** 标准，只依赖 **C++ STL 标准模板库**。
 
 3. 增加：recent，最近使用的类，类似于 最近使用的元素。  
-增加：is_in，判断 value 是否在容器中。  
-增加：if_in，如果 value 在容器中则，调用函数 __func 并返回 true，否则返回 false。
+4. 增加：is_in，判断 value 是否在容器中。  
+5. 增加：if_in，如果 value 在容器中则，调用函数 __func 并返回 true，否则返回 false。
