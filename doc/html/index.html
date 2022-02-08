@@ -75,16 +75,81 @@ $(function() {
 依赖</h2>
 <p>C++ STL 标准模板库</p>
 <h2><a class="anchor" id="autotoc_md3"></a>
+使用说明</h2>
+<p>详细情况查看 doc/html 里的文档。 <br  />
+ 所有模板类和算法都包含在 bmm 名字空间里，例如： bmm::recent。 <br  />
+ 需要 C++ 编译器，支持 C++17 标准。 <br  />
+ 无需编译，直接包含头文件就可以。</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">// 示例代码</div>
+<div class="line">#include &lt;iostream&gt;</div>
+<div class="line">#include &lt;vector&gt;</div>
+<div class="line">#include &quot;bmm/recent.hpp&quot;</div>
+<div class="line">#include &quot;bmm/algo.hpp&quot;</div>
+<div class="line"> </div>
+<div class="line">int main(int argc, const char *argv[])</div>
+<div class="line">{</div>
+<div class="line">    bmm::recent&lt;int&gt; rec = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};</div>
+<div class="line">    std::cout &lt;&lt; &quot;recent example begin&quot; &lt;&lt; std::endl;</div>
+<div class="line">    std::cout &lt;&lt; &quot;before recent: &quot;;</div>
+<div class="line">    for (auto i : rec)</div>
+<div class="line">        std::cout &lt;&lt; i &lt;&lt; &quot; &quot;;</div>
+<div class="line">    std::cout &lt;&lt; std::endl;</div>
+<div class="line">    rec.push(50);</div>
+<div class="line">    std::cout &lt;&lt; &quot;push 50&quot; &lt;&lt; std::endl;</div>
+<div class="line">    std::cout &lt;&lt; &quot;after recent: &quot;;</div>
+<div class="line">    for (auto i : rec)</div>
+<div class="line">        std::cout &lt;&lt; i &lt;&lt; &quot; &quot;;</div>
+<div class="line">    std::cout &lt;&lt; std::endl;</div>
+<div class="line">    std::cout &lt;&lt; &quot;recent example end&quot; &lt;&lt; std::endl;</div>
+<div class="line">    </div>
+<div class="line">    std::cout &lt;&lt; std::endl;</div>
+<div class="line">    std::cout &lt;&lt; &quot;algo example begin&quot; &lt;&lt; std::endl;</div>
+<div class="line">    std::vector&lt;int&gt; vec = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};</div>
+<div class="line">    int n = 3;</div>
+<div class="line">    if (bmm::is_in(vec, n))</div>
+<div class="line">        std::cout &lt;&lt; &quot;is_in: &quot; &lt;&lt; n &lt;&lt; &quot; is in vec&quot; &lt;&lt; std::endl;</div>
+<div class="line">    else</div>
+<div class="line">        std::cout &lt;&lt; &quot;is_in: &quot; &lt;&lt; n &lt;&lt; &quot; is not in vec&quot; &lt;&lt; std::endl;</div>
+<div class="line">    int k = 10;</div>
+<div class="line">    int add = 50;</div>
+<div class="line">    std::cout &lt;&lt; &quot;if_in before: &quot;;</div>
+<div class="line">    for (auto i : vec)</div>
+<div class="line">        std::cout &lt;&lt; i &lt;&lt; &quot; &quot;;</div>
+<div class="line">    std::cout &lt;&lt; std::endl;</div>
+<div class="line">    bmm::if_in(vec, k, [add](int &amp;i)</div>
+<div class="line">               { i += add; });</div>
+<div class="line">    std::cout &lt;&lt; &quot;if_in &quot; &lt;&lt; k &lt;&lt; &quot; += &quot; &lt;&lt; add &lt;&lt; &quot;: &quot;;</div>
+<div class="line">    for (auto i : vec)</div>
+<div class="line">        std::cout &lt;&lt; i &lt;&lt; &quot; &quot;;</div>
+<div class="line">    std::cout &lt;&lt; std::endl;</div>
+<div class="line">    std::cout &lt;&lt; &quot;algo example end&quot; &lt;&lt; std::endl;</div>
+<div class="line">    return 0;</div>
+<div class="line">}</div>
+</div><!-- fragment --><div class="fragment"><div class="line"># 结果</div>
+<div class="line">recent example begin</div>
+<div class="line">before recent: 10 9 8 7 6 5 4 3 2 1 </div>
+<div class="line">push 50</div>
+<div class="line">after recent: 50 10 9 8 7 6 5 4 3 2 </div>
+<div class="line">recent example end</div>
+<div class="line"> </div>
+<div class="line">algo example begin</div>
+<div class="line">is_in: 3 is in vec</div>
+<div class="line">if_in before: 1 2 3 4 5 6 7 8 9 10 </div>
+<div class="line">if_in 10 += 50: 1 2 3 4 5 6 7 8 9 60 </div>
+<div class="line">algo example end</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md4"></a>
 库功能说明</h2>
-<h3><a class="anchor" id="autotoc_md4"></a>
+<p>所有模板类和算法都包含在 bmm 名字空间里，例如： bmm::recent </p>
+<h3><a class="anchor" id="autotoc_md5"></a>
 模板类</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">名称 </th><th class="markdownTableHeadNone">文件 </th><th class="markdownTableHeadNone">说明  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">recent </td><td class="markdownTableBodyNone">&lt;<a class="el" href="recent_8hpp.html" title="最近使用的元素">bmm/recent.hpp</a>&gt; </td><td class="markdownTableBodyNone">最近使用的类，类似于 最近使用的文件  </td></tr>
+<td class="markdownTableBodyNone">recent </td><td class="markdownTableBodyNone">&lt;<a class="el" href="recent_8hpp.html" title="最近使用的元素">bmm/recent.hpp</a>&gt; </td><td class="markdownTableBodyNone">最近使用的元素，类似于 最近使用的文件  </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md5"></a>
+<h3><a class="anchor" id="autotoc_md6"></a>
 算法</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -94,10 +159,10 @@ $(function() {
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">if_in </td><td class="markdownTableBodyNone">&lt;<a class="el" href="algo_8hpp.html" title="一些算法">bmm/algo.hpp</a>&gt; </td><td class="markdownTableBodyNone">如果 value 在容器中则，调用函数 __func 并返回 true，否则返回 false  </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 开源协议</h2>
 <p><a href="http://license.coscl.org.cn/MulanPSL2">MulanPSL-2.0</a></p>
-<h2><a class="anchor" id="autotoc_md7"></a>
+<h2><a class="anchor" id="autotoc_md8"></a>
 项目地址</h2>
 <p><b>GITEE</b>&#160;&#160;&#160;&#160;<b><a href="https://gitee.com/cnhemiya/bmm-cpp">https://gitee.com/cnhemiya/bmm-cpp</a></b> </p>
 </div></div><!-- PageDoc -->
