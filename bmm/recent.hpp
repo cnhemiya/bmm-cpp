@@ -1,9 +1,8 @@
-/// ======================================================================
-/// @license MulanPSL2
+/// LICENSE  MulanPSL2
 /// @author  cnhemiya@qq.com
 /// @date    2022-02-06 15:59
-/// ======================================================================
-/// @file recent.hpp
+///
+/// @file bmm/recent.hpp
 /// @brief 最近使用的元素
 
 #ifndef _BMM_RECENT_HPP_
@@ -14,13 +13,14 @@
 
 _BMM_NAMESPACE_BEGIN_
 
-/// @brief 最近使用的元素
-/// 默认情况下最大保存10个最近使用的元素，最近使用的元素会被放在最前面，并且只保留最近使用的元素。
+/// @class recent
+/// @brief 最近使用的元素。
+/// @details 默认情况下最大保存10个最近使用的元素，最近使用的元素会被放在最前面，并且只保留最近使用的元素。 \n
 /// 如果最近使用的元素超过了最大保存数量，则最后一个元素会被删除。
 ///
 /// @tparam _T 元素类型
 ///
-/// @example 示例：
+/// @example recent
 /// @code
 /// #include <iostream>
 /// #include <bmm/recent.hpp>

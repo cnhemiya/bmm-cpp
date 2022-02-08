@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>苞米面 C++ 模板库: recent&lt; _T &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">苞米面 C++ 模板库
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classrecent-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">recent&lt; _T &gt; 模板类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>最近使用的元素。  
+ <a href="classrecent.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="recent_8hpp_source.html">recent.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a1d2429e281ccc5d93a16748aeb2c8051"><td class="memItemLeft" align="right" valign="top"><a id="a1d2429e281ccc5d93a16748aeb2c8051"></a>
+typedef _T&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b></td></tr>
+<tr class="separator:a1d2429e281ccc5d93a16748aeb2c8051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec14b362c2d10b41628caf41c1e4180"><td class="memItemLeft" align="right" valign="top"><a id="abec14b362c2d10b41628caf41c1e4180"></a>
+typedef std::list&lt; value_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>datas_type</b></td></tr>
+<tr class="separator:abec14b362c2d10b41628caf41c1e4180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a559f0111017670499c4b691ef5ed8545"><td class="memItemLeft" align="right" valign="top"><a id="a559f0111017670499c4b691ef5ed8545"></a>
+typedef datas_type::size_type&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b></td></tr>
+<tr class="separator:a559f0111017670499c4b691ef5ed8545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd86013036d468c75c906bd3b3b192f7"><td class="memItemLeft" align="right" valign="top"><a id="acd86013036d468c75c906bd3b3b192f7"></a>
+typedef datas_type::reference&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b></td></tr>
+<tr class="separator:acd86013036d468c75c906bd3b3b192f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c186b9f0b641d31c6971f4a8349c45"><td class="memItemLeft" align="right" valign="top"><a id="a52c186b9f0b641d31c6971f4a8349c45"></a>
+typedef datas_type::const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b></td></tr>
+<tr class="separator:a52c186b9f0b641d31c6971f4a8349c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3553a4f461e28c58d6e2b757f49306e"><td class="memItemLeft" align="right" valign="top"><a id="ac3553a4f461e28c58d6e2b757f49306e"></a>
+typedef datas_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
+<tr class="separator:ac3553a4f461e28c58d6e2b757f49306e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addefb3a589a0fa738c46270fea329610"><td class="memItemLeft" align="right" valign="top"><a id="addefb3a589a0fa738c46270fea329610"></a>
+typedef datas_type::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b></td></tr>
+<tr class="separator:addefb3a589a0fa738c46270fea329610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e11f2319249a4162143211bd259b117"><td class="memItemLeft" align="right" valign="top"><a id="a4e11f2319249a4162143211bd259b117"></a>
+typedef datas_type::reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>reverse_iterator</b></td></tr>
+<tr class="separator:a4e11f2319249a4162143211bd259b117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa3f28a2da459fddf64a21a19bf320f"><td class="memItemLeft" align="right" valign="top"><a id="abaa3f28a2da459fddf64a21a19bf320f"></a>
+typedef datas_type::const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>const_reverse_iterator</b></td></tr>
+<tr class="separator:abaa3f28a2da459fddf64a21a19bf320f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a46544293b08bbca4ddfe638fab65f208"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#a46544293b08bbca4ddfe638fab65f208">recent</a> (size_type __n=10)</td></tr>
+<tr class="memdesc:a46544293b08bbca4ddfe638fab65f208"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="classrecent.html#a46544293b08bbca4ddfe638fab65f208">更多...</a><br /></td></tr>
+<tr class="separator:a46544293b08bbca4ddfe638fab65f208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db52b8ddc4441acabd2553bab95cccd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#a4db52b8ddc4441acabd2553bab95cccd">recent</a> (const std::initializer_list&lt; value_type &gt; &amp;__l)</td></tr>
+<tr class="memdesc:a4db52b8ddc4441acabd2553bab95cccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="classrecent.html#a4db52b8ddc4441acabd2553bab95cccd">更多...</a><br /></td></tr>
+<tr class="separator:a4db52b8ddc4441acabd2553bab95cccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3eee323b268257b950127552c43ae08"><td class="memItemLeft" align="right" valign="top"><a id="ad3eee323b268257b950127552c43ae08"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#ad3eee323b268257b950127552c43ae08">push</a> (const value_type &amp;__x)</td></tr>
+<tr class="memdesc:ad3eee323b268257b950127552c43ae08"><td class="mdescLeft">&#160;</td><td class="mdescRight">向前压入元素 <br /></td></tr>
+<tr class="separator:ad3eee323b268257b950127552c43ae08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a490ef620d5b39beb20f18d3a8650333d"><td class="memItemLeft" align="right" valign="top"><a id="a490ef620d5b39beb20f18d3a8650333d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#a490ef620d5b39beb20f18d3a8650333d">push</a> (value_type &amp;&amp;__x)</td></tr>
+<tr class="memdesc:a490ef620d5b39beb20f18d3a8650333d"><td class="mdescLeft">&#160;</td><td class="mdescRight">向前压入元素 <br /></td></tr>
+<tr class="separator:a490ef620d5b39beb20f18d3a8650333d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec99b1f591cfd30275b3ab7c8c97215"><td class="memItemLeft" align="right" valign="top"><a id="afec99b1f591cfd30275b3ab7c8c97215"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#afec99b1f591cfd30275b3ab7c8c97215">pop</a> ()</td></tr>
+<tr class="memdesc:afec99b1f591cfd30275b3ab7c8c97215"><td class="mdescLeft">&#160;</td><td class="mdescRight">弹出最后一个元素 <br /></td></tr>
+<tr class="separator:afec99b1f591cfd30275b3ab7c8c97215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d1f5bf3c1ee9c4c1103c14449395b91"><td class="memItemLeft" align="right" valign="top"><a id="a1d1f5bf3c1ee9c4c1103c14449395b91"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#a1d1f5bf3c1ee9c4c1103c14449395b91">front</a> () noexcept</td></tr>
+<tr class="memdesc:a1d1f5bf3c1ee9c4c1103c14449395b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">弹出第一个元素的引用 <br /></td></tr>
+<tr class="separator:a1d1f5bf3c1ee9c4c1103c14449395b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058c9cde91c7b1f169b693356d6042da"><td class="memItemLeft" align="right" valign="top"><a id="a058c9cde91c7b1f169b693356d6042da"></a>
+const_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#a058c9cde91c7b1f169b693356d6042da">front</a> () const noexcept</td></tr>
+<tr class="memdesc:a058c9cde91c7b1f169b693356d6042da"><td class="mdescLeft">&#160;</td><td class="mdescRight">弹出第一个元素的常引用 <br /></td></tr>
+<tr class="separator:a058c9cde91c7b1f169b693356d6042da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0922346bad0159b06570582f76f50637"><td class="memItemLeft" align="right" valign="top"><a id="a0922346bad0159b06570582f76f50637"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#a0922346bad0159b06570582f76f50637">back</a> () noexcept</td></tr>
+<tr class="memdesc:a0922346bad0159b06570582f76f50637"><td class="mdescLeft">&#160;</td><td class="mdescRight">弹出最后一个元素的引用 <br /></td></tr>
+<tr class="separator:a0922346bad0159b06570582f76f50637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec30752f7cbeda35d00fb3c79fefae2a"><td class="memItemLeft" align="right" valign="top"><a id="aec30752f7cbeda35d00fb3c79fefae2a"></a>
+const_reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#aec30752f7cbeda35d00fb3c79fefae2a">back</a> () const noexcept</td></tr>
+<tr class="memdesc:aec30752f7cbeda35d00fb3c79fefae2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">弹出最后一个元素的常引用 <br /></td></tr>
+<tr class="separator:aec30752f7cbeda35d00fb3c79fefae2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7cc0af19063d6e41bb90c5b4d60ecad"><td class="memItemLeft" align="right" valign="top"><a id="ac7cc0af19063d6e41bb90c5b4d60ecad"></a>
+iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#ac7cc0af19063d6e41bb90c5b4d60ecad">begin</a> () noexcept</td></tr>
+<tr class="memdesc:ac7cc0af19063d6e41bb90c5b4d60ecad"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回迭代器第一个指针 <br /></td></tr>
+<tr class="separator:ac7cc0af19063d6e41bb90c5b4d60ecad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86fbe8138548435b71bdc9277f8b833f"><td class="memItemLeft" align="right" valign="top"><a id="a86fbe8138548435b71bdc9277f8b833f"></a>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#a86fbe8138548435b71bdc9277f8b833f">begin</a> () const</td></tr>
+<tr class="memdesc:a86fbe8138548435b71bdc9277f8b833f"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回迭代器第一个常指针 <br /></td></tr>
+<tr class="separator:a86fbe8138548435b71bdc9277f8b833f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda703198b9f39f9934902702cb6ff04"><td class="memItemLeft" align="right" valign="top"><a id="adda703198b9f39f9934902702cb6ff04"></a>
+iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#adda703198b9f39f9934902702cb6ff04">end</a> () noexcept</td></tr>
+<tr class="memdesc:adda703198b9f39f9934902702cb6ff04"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回迭代器最后一个指针 <br /></td></tr>
+<tr class="separator:adda703198b9f39f9934902702cb6ff04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e4fb63fb8c2bfc3309686bf3d39376"><td class="memItemLeft" align="right" valign="top"><a id="a45e4fb63fb8c2bfc3309686bf3d39376"></a>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#a45e4fb63fb8c2bfc3309686bf3d39376">end</a> () const noexcept</td></tr>
+<tr class="memdesc:a45e4fb63fb8c2bfc3309686bf3d39376"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回迭代器最后一个常指针 <br /></td></tr>
+<tr class="separator:a45e4fb63fb8c2bfc3309686bf3d39376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a769df02dba2d0e4a6466935804e640"><td class="memItemLeft" align="right" valign="top"><a id="a9a769df02dba2d0e4a6466935804e640"></a>
+iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#a9a769df02dba2d0e4a6466935804e640">rbegin</a> () noexcept</td></tr>
+<tr class="memdesc:a9a769df02dba2d0e4a6466935804e640"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回反向迭代器第一个指针 <br /></td></tr>
+<tr class="separator:a9a769df02dba2d0e4a6466935804e640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7fb5ee60b94c76703f513bf11872802"><td class="memItemLeft" align="right" valign="top"><a id="af7fb5ee60b94c76703f513bf11872802"></a>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#af7fb5ee60b94c76703f513bf11872802">rbegin</a> () const noexcept</td></tr>
+<tr class="memdesc:af7fb5ee60b94c76703f513bf11872802"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回反向迭代器第一个常指针 <br /></td></tr>
+<tr class="separator:af7fb5ee60b94c76703f513bf11872802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acae1ef2b8d452d080de2afcaa8f05be5"><td class="memItemLeft" align="right" valign="top"><a id="acae1ef2b8d452d080de2afcaa8f05be5"></a>
+iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#acae1ef2b8d452d080de2afcaa8f05be5">rend</a> () noexcept</td></tr>
+<tr class="memdesc:acae1ef2b8d452d080de2afcaa8f05be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回反向迭代器最后一个指针 <br /></td></tr>
+<tr class="separator:acae1ef2b8d452d080de2afcaa8f05be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a371a1e299bf178c77a82b03adc77f339"><td class="memItemLeft" align="right" valign="top"><a id="a371a1e299bf178c77a82b03adc77f339"></a>
+const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#a371a1e299bf178c77a82b03adc77f339">rend</a> () const noexcept</td></tr>
+<tr class="memdesc:a371a1e299bf178c77a82b03adc77f339"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回反向迭代器最后一个常指针 <br /></td></tr>
+<tr class="separator:a371a1e299bf178c77a82b03adc77f339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a0a9e21854b2866be46098fcc7aa039"><td class="memItemLeft" align="right" valign="top"><a id="a2a0a9e21854b2866be46098fcc7aa039"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#a2a0a9e21854b2866be46098fcc7aa039">size</a> () const noexcept</td></tr>
+<tr class="memdesc:a2a0a9e21854b2866be46098fcc7aa039"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回元素数量 <br /></td></tr>
+<tr class="separator:a2a0a9e21854b2866be46098fcc7aa039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7efe0b710db37f521a883eb57c7134df"><td class="memItemLeft" align="right" valign="top"><a id="a7efe0b710db37f521a883eb57c7134df"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#a7efe0b710db37f521a883eb57c7134df">max_size</a> () const noexcept</td></tr>
+<tr class="memdesc:a7efe0b710db37f521a883eb57c7134df"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回最大元素数量 <br /></td></tr>
+<tr class="separator:a7efe0b710db37f521a883eb57c7134df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf39b1f3f1639fd285f50bc5210f207e"><td class="memItemLeft" align="right" valign="top"><a id="adf39b1f3f1639fd285f50bc5210f207e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#adf39b1f3f1639fd285f50bc5210f207e">clear</a> () noexcept</td></tr>
+<tr class="memdesc:adf39b1f3f1639fd285f50bc5210f207e"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除容器里所有元素 <br /></td></tr>
+<tr class="separator:adf39b1f3f1639fd285f50bc5210f207e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac098c1c3354d3e22fe2c9ffa24849dcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#ac098c1c3354d3e22fe2c9ffa24849dcb">resize</a> (size_type __n)</td></tr>
+<tr class="memdesc:ac098c1c3354d3e22fe2c9ffa24849dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">重置容器的最大元素数量  <a href="classrecent.html#ac098c1c3354d3e22fe2c9ffa24849dcb">更多...</a><br /></td></tr>
+<tr class="separator:ac098c1c3354d3e22fe2c9ffa24849dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55bdb5d64e6a97235b92c0a207fde4cb"><td class="memItemLeft" align="right" valign="top"><a id="a55bdb5d64e6a97235b92c0a207fde4cb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecent.html#a55bdb5d64e6a97235b92c0a207fde4cb">empty</a> () const noexcept</td></tr>
+<tr class="memdesc:a55bdb5d64e6a97235b92c0a207fde4cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断容器是否为空 <br /></td></tr>
+<tr class="separator:a55bdb5d64e6a97235b92c0a207fde4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>template&lt;typename _T&gt;<br />
+class recent&lt; _T &gt;</h3>
+
+<p>最近使用的元素。 </p>
+<p>默认情况下最大保存10个最近使用的元素，最近使用的元素会被放在最前面，并且只保留最近使用的元素。 <br  />
+如果最近使用的元素超过了最大保存数量，则最后一个元素会被删除。</p>
+<dl class="tparams"><dt>模板参数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">_T</td><td>元素类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a46544293b08bbca4ddfe638fab65f208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46544293b08bbca4ddfe638fab65f208">&#9670;&nbsp;</a></span>recent() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrecent.html">recent</a>&lt; _T &gt;::<a class="el" href="classrecent.html">recent</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_type&#160;</td>
+          <td class="paramname"><em>__n</em> = <code>10</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">max_size</td><td>最大保存的最近使用的类的个数，默认为10 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4db52b8ddc4441acabd2553bab95cccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4db52b8ddc4441acabd2553bab95cccd">&#9670;&nbsp;</a></span>recent() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrecent.html">recent</a>&lt; _T &gt;::<a class="el" href="classrecent.html">recent</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::initializer_list&lt; value_type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>__l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">__l</td><td>要构造的最近使用的类的初始化列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ac098c1c3354d3e22fe2c9ffa24849dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac098c1c3354d3e22fe2c9ffa24849dcb">&#9670;&nbsp;</a></span>resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classrecent.html">recent</a>&lt; _T &gt;::resize </td>
+          <td>(</td>
+          <td class="paramtype">size_type&#160;</td>
+          <td class="paramname"><em>__n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重置容器的最大元素数量 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">__n</td><td>新的最大元素数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>bmm/<a class="el" href="recent_8hpp_source.html">recent.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

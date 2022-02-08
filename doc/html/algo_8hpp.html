@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>苞米面 C++ 模板库: bmm/algo.hpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">苞米面 C++ 模板库
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3855b158c164314995fac6a2abe3aa9c.html">bmm</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">algo.hpp 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>一些算法  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &quot;<a class="el" href="global_8hpp_source.html">global.hpp</a>&quot;</code><br />
+</div>
+<p><a href="algo_8hpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a45259df1de3782dc9b23879e147bcf07"><td class="memTemplParams" colspan="2">template&lt;typename _ArrayT , typename _T &gt; </td></tr>
+<tr class="memitem:a45259df1de3782dc9b23879e147bcf07"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="algo_8hpp.html#a45259df1de3782dc9b23879e147bcf07">is_in</a> (const _ArrayT &amp;__arr, const _T &amp;__val)</td></tr>
+<tr class="memdesc:a45259df1de3782dc9b23879e147bcf07"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断 value 是否在容器中  <a href="algo_8hpp.html#a45259df1de3782dc9b23879e147bcf07">更多...</a><br /></td></tr>
+<tr class="separator:a45259df1de3782dc9b23879e147bcf07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e2995ba708b32f13e2550bac8e912a"><td class="memTemplParams" colspan="2">template&lt;typename _ArrayT , typename _T , typename _Func  = std::function&lt;void(_T &amp;)&gt;&gt; </td></tr>
+<tr class="memitem:a02e2995ba708b32f13e2550bac8e912a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="algo_8hpp.html#a02e2995ba708b32f13e2550bac8e912a">if_in</a> (_ArrayT &amp;__arr, const _T &amp;__val, _Func __func)</td></tr>
+<tr class="memdesc:a02e2995ba708b32f13e2550bac8e912a"><td class="mdescLeft">&#160;</td><td class="mdescRight">如果找到第一个符合条件的值，则调用函数 __func 并返回 true，否则返回 false  <a href="algo_8hpp.html#a02e2995ba708b32f13e2550bac8e912a">更多...</a><br /></td></tr>
+<tr class="separator:a02e2995ba708b32f13e2550bac8e912a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>一些算法 </p>
+<p>LICENSE MulanPSL2 </p><dl class="section author"><dt>作者</dt><dd><a href="#" onclick="location.href='mai'+'lto:'+'cnh'+'em'+'iya'+'@q'+'q.c'+'om'; return false;">cnhem<span style="display: none;">.nosp@m.</span>iya@<span style="display: none;">.nosp@m.</span>qq.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2022-02-06 15:58 </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a02e2995ba708b32f13e2550bac8e912a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02e2995ba708b32f13e2550bac8e912a">&#9670;&nbsp;</a></span>if_in()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ArrayT , typename _T , typename _Func  = std::function&lt;void(_T &amp;)&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool if_in </td>
+          <td>(</td>
+          <td class="paramtype">_ArrayT &amp;&#160;</td>
+          <td class="paramname"><em>__arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const _T &amp;&#160;</td>
+          <td class="paramname"><em>__val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_Func&#160;</td>
+          <td class="paramname"><em>__func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>如果找到第一个符合条件的值，则调用函数 __func 并返回 true，否则返回 false </p>
+<p>必须是一个符合 STL 的容器类型，而且必须是一个类型为 _T 的容器</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">__arr</td><td>容器 </td></tr>
+    <tr><td class="paramname">__val</td><td>值 </td></tr>
+    <tr><td class="paramname">__func</td><td>函数，符合 void(_T &amp;) 的函数，可以是 lambda 表达式，并且可以更改容器中的值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否在容器中 </dd></dl>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="if_in-example.html#a0">if_in</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a45259df1de3782dc9b23879e147bcf07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45259df1de3782dc9b23879e147bcf07">&#9670;&nbsp;</a></span>is_in()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ArrayT , typename _T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">_BMM_NAMESPACE_BEGIN_bool is_in </td>
+          <td>(</td>
+          <td class="paramtype">const _ArrayT &amp;&#160;</td>
+          <td class="paramname"><em>__arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const _T &amp;&#160;</td>
+          <td class="paramname"><em>__val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判断 value 是否在容器中 </p>
+<p>ArryaT 必须是一个符合 STL 的容器类型，而且必须是一个类型为 _T 的容器</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">__arr</td><td>容器 </td></tr>
+    <tr><td class="paramname">__val</td><td>值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否在容器中 </dd></dl>
+<dl class="section examples"><dt>示例</dt><dd><a class="el" href="is_in-example.html#a0">is_in</a>.</dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

@@ -1,9 +1,8 @@
-/// ======================================================================
-/// @license MulanPSL2
+/// LICENSE  MulanPSL2
 /// @author  cnhemiya@qq.com
 /// @date    2022-02-06 16:00
-/// ======================================================================
-/// @file global.hpp
+///
+/// @file bmm/global.hpp
 /// @brief 全局设置
 
 #ifndef _BMM_GLOBAL_HPP_
