@@ -3,19 +3,19 @@
 
 ## 简介
 苞米面 C++ 模板库，无需编译，直接包含头文件就可以。  
-需要 C++ 编译器，支持 C++17 标准。
+需要 C++ 编译器，支持 **C++17** 标准。
 
 ## 依赖
-C++ STL 标准模板库
+**C++ STL 标准模板库**
 
 ## 使用说明
-详细情况查看 doc/html 里的文档。  
-所有模板类和算法都包含在 bmm 名字空间里，例如： bmm::recent。  
-需要 C++ 编译器，支持 C++17 标准。  
+详细情况查看 **doc/html** 里的文档。  
+所有模板类和算法都包含在 **bmm** 名字空间里，例如： **bmm::recent**。  
+需要 C++ 编译器，支持 **C++17** 标准。  
 无需编译，直接包含头文件就可以。
 
+**示例代码**
 ```c++
-// 示例代码
 #include <iostream>
 #include <vector>
 #include "bmm/recent.hpp"
@@ -61,8 +61,9 @@ int main(int argc, const char *argv[])
     return 0;
 }
 ```
+
+**结果**
 ```bash
-# 结果
 recent example begin
 before recent: 10 9 8 7 6 5 4 3 2 1 
 push 50
@@ -76,7 +77,7 @@ if_in 10 += 50: 1 2 3 4 5 6 7 8 9 60
 algo example end
 ```
 ## 库功能说明
-所有模板类和算法都包含在 bmm 名字空间里，例如： bmm::recent
+所有模板类和算法都包含在 **bmm** 名字空间里，例如： **bmm::recent**
 ### 模板类
 名称|文件|说明
 --|--|--
