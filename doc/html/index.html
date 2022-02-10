@@ -89,13 +89,13 @@ $(function() {
 <div class="line">{</div>
 <div class="line">    bmm::recent&lt;int&gt; rec = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};</div>
 <div class="line">    std::cout &lt;&lt; &quot;recent example begin&quot; &lt;&lt; std::endl;</div>
-<div class="line">    std::cout &lt;&lt; &quot;before recent: &quot;;</div>
+<div class="line">    std::cout &lt;&lt; &quot;recent before: &quot;;</div>
 <div class="line">    for (auto i : rec)</div>
 <div class="line">        std::cout &lt;&lt; i &lt;&lt; &quot; &quot;;</div>
 <div class="line">    std::cout &lt;&lt; std::endl;</div>
 <div class="line">    rec.push(50);</div>
 <div class="line">    std::cout &lt;&lt; &quot;push 50&quot; &lt;&lt; std::endl;</div>
-<div class="line">    std::cout &lt;&lt; &quot;after recent: &quot;;</div>
+<div class="line">    std::cout &lt;&lt; &quot;recent after: &quot;;</div>
 <div class="line">    for (auto i : rec)</div>
 <div class="line">        std::cout &lt;&lt; i &lt;&lt; &quot; &quot;;</div>
 <div class="line">    std::cout &lt;&lt; std::endl;</div>
@@ -125,9 +125,9 @@ $(function() {
 <div class="line">    return 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p><b>结果</b> </p><div class="fragment"><div class="line">recent example begin</div>
-<div class="line">before recent: 10 9 8 7 6 5 4 3 2 1 </div>
+<div class="line">recent before: 10 9 8 7 6 5 4 3 2 1 </div>
 <div class="line">push 50</div>
-<div class="line">after recent: 50 10 9 8 7 6 5 4 3 2 </div>
+<div class="line">recent after: 50 10 9 8 7 6 5 4 3 2 </div>
 <div class="line">recent example end</div>
 <div class="line"> </div>
 <div class="line">algo example begin</div>

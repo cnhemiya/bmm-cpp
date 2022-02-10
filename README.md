@@ -22,13 +22,13 @@ int main(int argc, const char *argv[])
 {
     bmm::recent<int> rec = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     std::cout << "recent example begin" << std::endl;
-    std::cout << "before recent: ";
+    std::cout << "recent before: ";
     for (auto i : rec)
         std::cout << i << " ";
     std::cout << std::endl;
     rec.push(50);
     std::cout << "push 50" << std::endl;
-    std::cout << "after recent: ";
+    std::cout << "recent after: ";
     for (auto i : rec)
         std::cout << i << " ";
     std::cout << std::endl;
@@ -62,9 +62,9 @@ int main(int argc, const char *argv[])
 **结果**
 ```bash
 recent example begin
-before recent: 10 9 8 7 6 5 4 3 2 1 
+recent before: 10 9 8 7 6 5 4 3 2 1 
 push 50
-after recent: 50 10 9 8 7 6 5 4 3 2 
+recent after: 50 10 9 8 7 6 5 4 3 2 
 recent example end
 
 algo example begin
