@@ -9,7 +9,7 @@
 **C++ STL 标准模板库**
 
 ## 使用说明 
-详细情况查看 **doc/html** 里的文档。  
+详细接口说明查看 **doc/html** 里的文档。  
 
 **示例代码**
 ```c++
@@ -76,12 +76,12 @@ algo example end
 ## 功能说明
 所有模板类和算法都包含在 **bmm** 名字空间里，例如： **bmm::recent**
 ### 模板类
-名称|文件|说明
+名称|头文件|说明
 --|--|--
 recent|<bmm/recent.hpp>|最近使用的元素，类似于 最近使用的文件
 
 ### 算法
-名称|文件|说明
+名称|头文件|说明
 --|--|--
 is_in|<bmm/algo.hpp>|判断 value 是否在容器中  
 if_in|<bmm/algo.hpp>|如果 value 在容器中则，调用函数 __func 并返回 true，否则返回 false
