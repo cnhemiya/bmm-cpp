@@ -78,13 +78,13 @@ algo example end
 ### 模板类
 名称|头文件|说明
 --|--|--
-recent|<bmm/recent.hpp>|最近使用的元素，类似于 最近使用的文件
+recent|[<bmm/recent.hpp>](/bmm/recent.hpp)|最近使用的元素，类似于 最近使用的文件
 
 ### 算法
 名称|头文件|说明
 --|--|--
-is_in|<bmm/algo.hpp>|判断 value 是否在容器中  
-if_in|<bmm/algo.hpp>|如果 value 在容器中则，调用函数 __func 并返回 true，否则返回 false
+is_in|[<bmm/algo.hpp>](/bmm/algo.hpp)|判断 value 是否在容器中  
+if_in|[<bmm/algo.hpp>](/bmm/algo.hpp)|如果 value 在容器中则，调用函数 __func 并返回 true，否则返回 false
 
 ## 开源协议
 [MulanPSL-2.0](http://license.coscl.org.cn/MulanPSL2)
