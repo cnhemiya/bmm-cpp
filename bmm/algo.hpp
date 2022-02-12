@@ -54,10 +54,10 @@ bool is_in(const _ArrayT &__arr, const _T &__val)
 template <typename _ArrayT, typename _T, typename _Func = std::function<void(_T &)>>
 bool if_in(_ArrayT &__arr, const _T &__val, _Func __func)
 {
-    auto it = std::find(__arr.begin(), __arr.end(), __val);
-    if (it != __arr.end())
+    auto __it = std::find(__arr.begin(), __arr.end(), __val);
+    if (__it != __arr.end())
     {
-        __func(*it);
+        __func(*__it);
         return true;
     }
     return false;

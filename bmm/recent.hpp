@@ -67,8 +67,8 @@ public:
     recent(const std::initializer_list<value_type> &__l)
         : _M_max_size(10)
     {
-        for (const auto &i : __l)
-            _M_datas.push_front(i);
+        for (const auto &__i : __l)
+            _M_datas.push_front(__i);
         resize(10);
     }
 
