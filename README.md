@@ -14,7 +14,7 @@
 
 详细接口说明查看 [**doc/html**](doc/html) 里的文档。
 
-**示例代码**
+**示例**
 
 ```c++
 #include <iostream>
