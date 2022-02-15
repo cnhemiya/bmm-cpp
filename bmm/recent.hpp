@@ -19,26 +19,6 @@ _BMM_NAMESPACE_BEGIN_
 /// 如果最近使用的元素超过了最大保存数量，则最后一个元素会被删除。
 ///
 /// @tparam _T 元素类型
-///
-/// @example recent
-/// @code
-/// #include <iostream>
-/// #include <bmm/recent.hpp>
-///
-/// int main(int argc, const char *argv[])
-/// {
-///     bmm::recent<int> rec = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-///     for (auto i : rec)
-///         std::cout << i << " ";
-///     std::cout << std::endl;
-///     rec.push(50);
-///     for (auto i : rec)
-///         std::cout << i << " ";
-///     std::cout << std::endl;
-///     return 0;
-/// }
-/// @endcode
-
 template <typename _T>
 class recent
 {
