@@ -130,7 +130,7 @@ template&lt;typename _ArrayT , typename _T , typename _Func  = std::function&lt;
 </div><div class="memdoc">
 
 <p>如果找到第一个符合条件的值，则调用函数 __func 并返回 true，否则返回 false </p>
-<p>必须是一个符合 STL 的容器类型，而且必须是一个类型为 _T 的容器</p>
+<p>_ArrayT 必须是一个符合 STL 的容器类型，而且必须是一个类型为 _T 的容器</p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">__arr</td><td>容器 </td></tr>
@@ -140,8 +140,6 @@ template&lt;typename _ArrayT , typename _T , typename _Func  = std::function&lt;
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>是否在容器中 </dd></dl>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="if_in-example.html#a0">if_in</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -174,7 +172,7 @@ template&lt;typename _ArrayT , typename _T &gt; </div>
 </div><div class="memdoc">
 
 <p>判断 value 是否在容器中 </p>
-<p>ArryaT 必须是一个符合 STL 的容器类型，而且必须是一个类型为 _T 的容器</p>
+<p>_ArrayT 必须是一个符合 STL 的容器类型，而且必须是一个类型为 _T 的容器</p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">__arr</td><td>容器 </td></tr>
@@ -183,8 +181,6 @@ template&lt;typename _ArrayT , typename _T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>是否在容器中 </dd></dl>
-<dl class="section examples"><dt>示例</dt><dd><a class="el" href="is_in-example.html#a0">is_in</a>.</dd>
-</dl>
 
 </div>
 </div>
