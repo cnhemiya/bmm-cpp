@@ -12,7 +12,8 @@
 
 ## 使用说明
 
-详细接口说明查看 [**doc/html**](doc/html) 里的文档。
+详细接口说明查看 [**doc/html**](doc/html) 里的文档。  
+说明书和示例查看 [**doc/manual**](doc/manual) 里的文档。  
 
 **示例**
 
@@ -85,16 +86,16 @@ algo example end
 
 ### 模板类
 
-名称|头文件|说明
---|--|--
-recent|[<bmm/recent.hpp>](/bmm/recent.hpp)|最近使用的元素，类似于 最近使用的文件
+名称|头文件|说明书|简介
+--|--|--|--
+recent|[<bmm/recent.hpp>](/bmm/recent.hpp)|[recent](/doc/manual/recent.md)|最近使用的元素，类似于 最近使用的文件
 
 ### 算法
 
-名称|头文件|说明
---|--|--
-is_in|[<bmm/algo.hpp>](/bmm/algo.hpp)|判断 value 是否在容器中  
-if_in|[<bmm/algo.hpp>](/bmm/algo.hpp)|如果 value 在容器中则，调用函数 __func 并返回 true，否则返回 false
+名称|头文件|说明书|简介
+--|--|--|--
+is_in|[<bmm/algo.hpp>](/bmm/algo.hpp)|[is_in](/doc/manual/is_in.md)|判断 value 是否在容器中
+if_in|[<bmm/algo.hpp>](/bmm/algo.hpp)|[if_in](/doc/manual/if_in.md)|如果 value 在容器中则，调用函数 __func 并返回 true，否则返回 false
 
 ## 开源协议
 
