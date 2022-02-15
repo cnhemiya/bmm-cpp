@@ -15,7 +15,7 @@ _BMM_NAMESPACE_BEGIN_
 
 /// @fn bool is_in(const _ArrayT &__arr, const _T &__val)
 /// @brief 判断 value 是否在容器中
-/// @details ArryaT 必须是一个符合 STL 的容器类型，而且必须是一个类型为 _T 的容器
+/// @details _ArrayT 必须是一个符合 STL 的容器类型，而且必须是一个类型为 _T 的容器
 ///
 /// @param __arr 容器
 /// @param __val 值
@@ -38,7 +38,7 @@ bool is_in(const _ArrayT &__arr, const _T &__val)
 
 /// @fn bool if_in(_ArrayT &__arr, const _T &__val, _Func __func)
 /// @brief 如果找到第一个符合条件的值，则调用函数 __func 并返回 true，否则返回 false
-/// @details 必须是一个符合 STL 的容器类型，而且必须是一个类型为 _T 的容器
+/// @details _ArrayT 必须是一个符合 STL 的容器类型，而且必须是一个类型为 _T 的容器
 ///
 /// @param __arr 容器
 /// @param __val 值
