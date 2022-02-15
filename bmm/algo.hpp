@@ -21,15 +21,6 @@ _BMM_NAMESPACE_BEGIN_
 /// @param __val 值
 ///
 /// @return 是否在容器中
-///
-/// @example is_in
-/// @code
-/// std::vector<int> vec = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-/// if (bmm::is_in(vec, 5))
-///     cout << "5 is in vec" << endl;
-/// else
-///     cout << "5 is not in vec" << endl;
-/// @endcode
 template <typename _ArrayT, typename _T>
 bool is_in(const _ArrayT &__arr, const _T &__val)
 {
@@ -45,12 +36,6 @@ bool is_in(const _ArrayT &__arr, const _T &__val)
 /// @param __func 函数，符合 void(_T &) 的函数，可以是 lambda 表达式，并且可以更改容器中的值
 ///
 /// @return 是否在容器中
-///
-/// @example if_in
-/// @code
-/// std::vector<int> vec = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-/// bmm::if_in(vec, 5, [](const int &i){ cout << i << " is in \n"; });
-/// @endcode
 template <typename _ArrayT, typename _T, typename _Func = std::function<void(_T &)>>
 bool if_in(_ArrayT &__arr, const _T &__val, _Func __func)
 {
