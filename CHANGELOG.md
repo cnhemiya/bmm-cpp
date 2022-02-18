@@ -1,3 +1,8 @@
+## v0.3.0 alpha
+
+### 增加
+
+- string_join：字符串算法，连接成一个字符串。
 ## v0.2.0 [2022-02-08]
 
 ### 增加
@@ -8,6 +13,6 @@
 
 ### 增加
 
-- recent，最近使用的类，类似于 最近使用的元素。
-- is_in，判断 value 是否在容器中。
-- if_in，如果 value 在容器中则，调用函数 __func 并返回 true，否则返回 false。
+- recent：最近使用的类，类似于最近使用的元素。
+- is_in：判断 value 是否在容器中。
+- if_in：如果 value 在容器中则，调用函数 __func 并返回 true，否则返回 false。

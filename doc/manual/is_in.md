@@ -25,11 +25,11 @@ bool is_in(const _ArrayT &__arr, const _T &__val);
 
 ## 相关说明
 
-名称|说明
---|--
-头文件|[<bmm/algo.hpp>](/bmm/algo.hpp)
-名字空间|bmm::is_in
-说明书|[is_in](/doc/manual/is_in.md)
+|名称|说明|
+|--|--|
+|头文件|[<bmm/algo.hpp>](/bmm/algo.hpp)|
+|名字空间|bmm::is_in|
+|说明书|[is_in](/doc/manual/is_in.md)|
 
 ## 示例
 
@@ -61,7 +61,7 @@ int main(int argc, const char *argv[])
 
 ## 结果
 
-```bash
+```text
 is_in example begin
 vector: 1 2 3 4 5 6 7 8 9 10 
 is_in(vec, 1) = true

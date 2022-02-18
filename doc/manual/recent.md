@@ -24,11 +24,11 @@ class recent;
 
 ## 相关说明
 
-名称|说明
---|--
-头文件|[<bmm/recent.hpp>](/bmm/recent.hpp)
-名字空间|bmm::recent
-说明书|[recent](/doc/manual/recent.md)
+|名称|说明|
+|--|--|
+|头文件|[<bmm/recent.hpp>](/bmm/recent.hpp)|
+|名字空间|bmm::recent|
+|说明书|[recent](/doc/manual/recent.md)|
 
 ## 示例
 
@@ -57,7 +57,7 @@ int main(int argc, const char *argv[])
 
 ## 结果
 
-```bash
+```text
 recent example begin
 recent before: 10 9 8 7 6 5 4 3 2 1 
 push 50

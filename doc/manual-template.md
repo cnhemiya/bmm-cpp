@@ -14,12 +14,13 @@
 
 **C++ STL 标准模板库**
 
-## 相关文件 
-名称|说明
---|--
-头文件|[<bmm/src.hpp>](/bmm/src.hpp)
-名字空间|bmm::src
-说明书|[src](/doc/manual/src.md)|
+## 相关文件
+
+|名称|说明|
+|--|--|
+|头文件|[<bmm/src.hpp>](/bmm/src.hpp)|
+|名字空间|bmm::src|
+|说明书|[src](/doc/manual/src.md)|
 
 ## 示例
 
@@ -29,6 +30,6 @@
 
 ## 结果
 
-```bash
-# result
+```text
+result
 ```

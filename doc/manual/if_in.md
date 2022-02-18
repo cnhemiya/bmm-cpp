@@ -26,11 +26,11 @@ bool if_in(_ArrayT &__arr, const _T &__val, _Func __func);
 
 ## 相关说明
 
-名称|说明
---|--
-头文件|[<bmm/algo.hpp>](/bmm/algo.hpp)
-名字空间|bmm::if_in
-说明书|[if_in](/doc/manual/if_in.md)
+|名称|说明|
+|--|--|
+|头文件|[<bmm/algo.hpp>](/bmm/algo.hpp)|
+|名字空间|bmm::if_in|
+|说明书|[if_in](/doc/manual/if_in.md)|
 
 ## 示例
 
@@ -69,7 +69,7 @@ int main(int argc, const char *argv[])
 
 ## 结果
 
-```bash
+```text
 if_in example begin
 vector before: 1 2 3 4 5 6 7 8 9 10 
 if 10 is in: true
