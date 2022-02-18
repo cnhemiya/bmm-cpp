@@ -95,8 +95,8 @@ algo example end
 |名称|头文件|说明书|简介|
 |--|--|--|--|
 |is_in|[<bmm/algo.hpp>](/bmm/algo.hpp)|[is_in](/doc/manual/is_in.md)|判断 value 是否在容器中|
-|if_in|[<bmm/algo.hpp>](/bmm/algo.hpp)|[if_in](/doc/manual/if_in.md)|如果 value 在容器中则，调用函数 __func 并返回 true，否则返回 false|
-|string_join|[<bmm/string_join.hpp>](/bmm/string_join.hpp)|[is_in](/doc/manual/string_join.md)|连接成一个字符串|
+|if_in|[<bmm/algo.hpp>](/bmm/algo.hpp)|[if_in](/doc/manual/if_in.md)|如果 value 在容器中则，调用函数 __func|
+|string_join|[<bmm/string_join.hpp>](/bmm/string_join.hpp)|[string_join](/doc/manual/string_join.md)|连接成一个字符串|
 
 ## 开源协议
 
