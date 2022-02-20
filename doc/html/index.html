@@ -84,26 +84,10 @@ $(function() {
 <div class="fragment"><div class="line"> {c++}</div>
 <div class="line">#include &lt;iostream&gt;</div>
 <div class="line">#include &lt;vector&gt;</div>
-<div class="line">#include &quot;bmm/recent.hpp&quot;</div>
 <div class="line">#include &quot;bmm/algo.hpp&quot;</div>
 <div class="line"> </div>
 <div class="line">int main(int argc, const char *argv[])</div>
 <div class="line">{</div>
-<div class="line">    bmm::recent&lt;int&gt; rec = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};</div>
-<div class="line">    std::cout &lt;&lt; &quot;recent example begin&quot; &lt;&lt; std::endl;</div>
-<div class="line">    std::cout &lt;&lt; &quot;recent before: &quot;;</div>
-<div class="line">    for (auto i : rec)</div>
-<div class="line">        std::cout &lt;&lt; i &lt;&lt; &quot; &quot;;</div>
-<div class="line">    std::cout &lt;&lt; std::endl;</div>
-<div class="line">    rec.push(50);</div>
-<div class="line">    std::cout &lt;&lt; &quot;push 50&quot; &lt;&lt; std::endl;</div>
-<div class="line">    std::cout &lt;&lt; &quot;recent after: &quot;;</div>
-<div class="line">    for (auto i : rec)</div>
-<div class="line">        std::cout &lt;&lt; i &lt;&lt; &quot; &quot;;</div>
-<div class="line">    std::cout &lt;&lt; std::endl;</div>
-<div class="line">    std::cout &lt;&lt; &quot;recent example end&quot; &lt;&lt; std::endl;</div>
-<div class="line">    </div>
-<div class="line">    std::cout &lt;&lt; std::endl;</div>
 <div class="line">    std::cout &lt;&lt; &quot;algo example begin&quot; &lt;&lt; std::endl;</div>
 <div class="line">    std::vector&lt;int&gt; vec = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};</div>
 <div class="line">    int n = 3;</div>
@@ -127,13 +111,7 @@ $(function() {
 <div class="line">    return 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p><b>结果</b></p>
-<div class="fragment"><div class="line">recent example begin</div>
-<div class="line">recent before: 10 9 8 7 6 5 4 3 2 1 </div>
-<div class="line">push 50</div>
-<div class="line">recent after: 50 10 9 8 7 6 5 4 3 2 </div>
-<div class="line">recent example end</div>
-<div class="line"> </div>
-<div class="line">algo example begin</div>
+<div class="fragment"><div class="line">algo example begin</div>
 <div class="line">is_in: 3 is in vec</div>
 <div class="line">if_in before: 1 2 3 4 5 6 7 8 9 10 </div>
 <div class="line">if_in 10 += 50: 1 2 3 4 5 6 7 8 9 60 </div>
@@ -142,12 +120,12 @@ $(function() {
 功能说明</h2>
 <p>所有模板类和算法都包含在 <b>bmm</b> 名字空间里，例如： <b>bmm::recent</b></p>
 <h3><a class="anchor" id="autotoc_md5"></a>
-模板类</h3>
+容器</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">名称 </th><th class="markdownTableHeadNone">头文件 </th><th class="markdownTableHeadNone">说明书 </th><th class="markdownTableHeadNone">简介  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">recent </td><td class="markdownTableBodyNone"><a href="/bmm/recent.hpp">&lt;bmm/recent.hpp&gt;</a> </td><td class="markdownTableBodyNone">recent </td><td class="markdownTableBodyNone">最近使用的元素，类似于 最近使用的文件  </td></tr>
+<td class="markdownTableBodyNone">recent </td><td class="markdownTableBodyNone"><a href="/bmm/recent.hpp">&lt;bmm/recent.hpp&gt;</a> </td><td class="markdownTableBodyNone">recent </td><td class="markdownTableBodyNone">最近使用的元素，类似于最近使用的文件  </td></tr>
 </table>
 <h3><a class="anchor" id="autotoc_md6"></a>
 算法</h3>
@@ -157,7 +135,11 @@ $(function() {
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">is_in </td><td class="markdownTableBodyNone"><a href="/bmm/algo.hpp">&lt;bmm/algo.hpp&gt;</a> </td><td class="markdownTableBodyNone">is_in </td><td class="markdownTableBodyNone">判断 value 是否在容器中  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">if_in </td><td class="markdownTableBodyNone"><a href="/bmm/algo.hpp">&lt;bmm/algo.hpp&gt;</a> </td><td class="markdownTableBodyNone">if_in </td><td class="markdownTableBodyNone">如果 value 在容器中则，调用函数 __func 并返回 true，否则返回 false  </td></tr>
+<td class="markdownTableBodyNone">if_in </td><td class="markdownTableBodyNone"><a href="/bmm/algo.hpp">&lt;bmm/algo.hpp&gt;</a> </td><td class="markdownTableBodyNone">if_in </td><td class="markdownTableBodyNone">如果 value 在容器中则，调用函数 __func  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">string_join </td><td class="markdownTableBodyNone"><a href="/bmm/string_algo.hpp">&lt;bmm/string_algo.hpp&gt;</a> </td><td class="markdownTableBodyNone">string_join </td><td class="markdownTableBodyNone">连接成一个字符串  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">string_split </td><td class="markdownTableBodyNone"><a href="/bmm/string_algo.hpp">&lt;bmm/string_algo.hpp&gt;</a> </td><td class="markdownTableBodyNone">string_split </td><td class="markdownTableBodyNone">分割字符串  </td></tr>
 </table>
 <h2><a class="anchor" id="autotoc_md7"></a>
 开源协议</h2>
