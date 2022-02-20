@@ -20,26 +20,10 @@
 ```c++
 #include <iostream>
 #include <vector>
-#include "bmm/recent.hpp"
 #include "bmm/algo.hpp"
 
 int main(int argc, const char *argv[])
 {
-    bmm::recent<int> rec = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    std::cout << "recent example begin" << std::endl;
-    std::cout << "recent before: ";
-    for (auto i : rec)
-        std::cout << i << " ";
-    std::cout << std::endl;
-    rec.push(50);
-    std::cout << "push 50" << std::endl;
-    std::cout << "recent after: ";
-    for (auto i : rec)
-        std::cout << i << " ";
-    std::cout << std::endl;
-    std::cout << "recent example end" << std::endl;
-    
-    std::cout << std::endl;
     std::cout << "algo example begin" << std::endl;
     std::vector<int> vec = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int n = 3;
@@ -67,12 +51,6 @@ int main(int argc, const char *argv[])
 **结果**
 
 ```text
-recent example begin
-recent before: 10 9 8 7 6 5 4 3 2 1 
-push 50
-recent after: 50 10 9 8 7 6 5 4 3 2 
-recent example end
-
 algo example begin
 is_in: 3 is in vec
 if_in before: 1 2 3 4 5 6 7 8 9 10 
@@ -96,7 +74,8 @@ algo example end
 |--|--|--|--|
 |is_in|[<bmm/algo.hpp>](/bmm/algo.hpp)|[is_in](/doc/manual/is_in.md)|判断 value 是否在容器中|
 |if_in|[<bmm/algo.hpp>](/bmm/algo.hpp)|[if_in](/doc/manual/if_in.md)|如果 value 在容器中则，调用函数 __func|
-|string_join|[<bmm/string_join.hpp>](/bmm/string_join.hpp)|[string_join](/doc/manual/string_join.md)|连接成一个字符串|
+|string_join|[<bmm/string_algo.hpp>](/bmm/string_algo.hpp)|[string_join](/doc/manual/string_join.md)|连接成一个字符串|
+|string_split|[<bmm/string_algo.hpp>](/bmm/string_algo.hpp)|[string_split](/doc/manual/string_split.md)|分割字符串|
 
 ## 开源协议
 
