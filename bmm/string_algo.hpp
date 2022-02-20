@@ -47,6 +47,31 @@ _String string_join(const _ArrayT &__arr, const _String &__sep)
     return string_join(__arr.begin(), __arr.end(), __sep);
 }
 
+/// @fn _ArrayT string_split(const _String &__s, const _String &__sep)
+/// @brief 将一个字符串按照 __sep 分割成一个字符串容器
+/// @details 返回的字符串容器，符合 STL 的 std::vector 容器类型，而且必须是一个类型为 _String 的容器
+///
+/// @param __s 字符串
+/// @param __sep 分隔符
+///
+/// @return 字符串容器
+template<typename _String, typename _ArrayT = std::vector<_String>>
+_ArrayT string_split(const _String &__s, const _String &__sep)
+{
+    std::size_t __pos = __s.find(__sep);
+    std::size_t __first_pos = 0;
+    _ArrayT __result;
+    while (__pos != std::string::npos)
+    {
+        __result.push_back(__s.substr(__first_pos, __pos - __first_pos));
+        __first_pos = __pos + __sep.size();
+        __pos = __s.find(__sep, __pos + __sep.size());
+    }
+    if (__first_pos != __s.size())
+        __result.push_back(__s.substr(__first_pos));
+    return __result;
+}
+
 _BMM_NAMESPACE_END_
 
 #endif // _BMM_STRING_ALGO_HPP_
