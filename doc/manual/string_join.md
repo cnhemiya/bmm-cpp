@@ -39,7 +39,7 @@ _String string_join(const _ArrayT &__arr, const _String &__sep);
 
 |名称|说明|
 |--|--|
-|头文件|[<bmm/string_join.hpp>](/bmm/string_join.hpp)|
+|头文件|[<bmm/string_algo.hpp>](/bmm/string_algo.hpp)|
 |名字空间|bmm::string_join|
 |说明书|[string_join](/doc/manual/string_join.md)|
 
